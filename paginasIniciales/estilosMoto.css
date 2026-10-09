@@ -1,0 +1,345 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #0a0a0c 0%, #0d0e15 100%);
+            color: #ecedee;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 2rem 2rem;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem 1rem;
+            border-radius: 48px;
+            background: rgba(20, 22, 32, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(0, 255, 200, 0.3);
+            box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5);
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #00E5FF, #00B4D8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h5 {
+            font-weight: 400;
+            color: #b9c3d4;
+            margin-top: 0.75rem;
+        }
+
+        /* Navegación moderna */
+        .nav-card {
+            background: rgba(15, 17, 26, 0.8);
+            backdrop-filter: blur(10px);
+            border-radius: 28px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid rgba(0, 255, 200, 0.15);
+        }
+
+        .nav-card h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #00E5FF;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            background: rgba(255,255,255,0.05);
+            padding: 0.6rem 1.4rem;
+            border-radius: 60px;
+            text-decoration: none;
+            color: #ddd;
+            font-weight: 500;
+            transition: all 0.25s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(0, 230, 200, 0.3);
+        }
+
+        .nav-links li a:hover {
+            background: #00B4D8;
+            color: #0a0a0c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 180, 216, 0.4);
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+            scroll-margin-top: 80px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            border-left: 6px solid #00E5FF;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .intro-box {
+            background: linear-gradient(120deg, #1A1E2A, #0F1119);
+            padding: 1.8rem;
+            border-radius: 28px;
+            font-size: 1.05rem;
+            border: 1px solid rgba(0,255,200,0.1);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        .highlight-bike {
+            text-align: center;
+            margin: 1.8rem 0;
+        }
+
+        .bike-image img {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 28px;
+            transition: transform 0.4s;
+            box-shadow: 0 20px 30px -10px black;
+        }
+
+        .bike-image img:hover {
+            transform: scale(1.01);
+        }
+
+        .bike-caption {
+            margin-top: 1rem;
+            font-weight: 600;
+            background: rgba(0, 229, 255, 0.2);
+            display: inline-block;
+            padding: 0.3rem 1.5rem;
+            border-radius: 60px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* Tabla mejorada */
+        .table-wrapper {
+            overflow-x: auto;
+            border-radius: 24px;
+            background: #0E1019;
+            padding: 0.2rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: #00B4D8;
+            color: #0a0a0c;
+            padding: 14px 12px;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        tr:hover {
+            background: rgba(0, 180, 216, 0.15);
+        }
+
+        /* Tarjetas para características */
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .feature-card {
+            background: #0E1019;
+            border-radius: 24px;
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 200px;
+            border: 1px solid rgba(0,229,255,0.2);
+            transition: 0.2s;
+        }
+
+        .feature-card:hover {
+            border-color: #00E5FF;
+            transform: translateY(-4px);
+        }
+
+        .feature-card i {
+            font-size: 2rem;
+            color: #00E5FF;
+            margin-bottom: 0.8rem;
+        }
+
+        .ranking-list {
+            background: #0E1019;
+            border-radius: 24px;
+            padding: 1.5rem 2rem;
+        }
+
+        .ranking-list ol {
+            padding-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .ranking-list li {
+            margin: 0.6rem 0;
+            font-weight: 500;
+        }
+
+        /* Formulario premium */
+        .form-card {
+            background: rgba(10, 12, 20, 0.85);
+            backdrop-filter: blur(8px);
+            border-radius: 32px;
+            padding: 2rem;
+            border: 1px solid rgba(0, 230, 200, 0.4);
+        }
+
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group {
+            flex: 1;
+            min-width: 180px;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.4rem;
+            color: #00E5FF;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            background: #1E212E;
+            border: 1px solid #333A4D;
+            border-radius: 18px;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.2s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #00E5FF;
+            box-shadow: 0 0 0 3px rgba(0,229,255,0.2);
+        }
+
+        .checkbox-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .checkbox-group label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-weight: normal;
+            color: #ccc;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        button {
+            background: linear-gradient(95deg, #00B4D8, #0088AA);
+            border: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 8px 18px rgba(0,180,216,0.5);
+        }
+
+        .btn-up {
+            background: #1E212E;
+            border: 1px solid #00E5FF;
+            margin-top: 1rem;
+        }
+
+        .toast-msg {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #1E1F2C;
+            backdrop-filter: blur(12px);
+            padding: 12px 24px;
+            border-radius: 60px;
+            border-left: 5px solid #00E5FF;
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+            color: #fff;
+            font-weight: 500;
+            z-index: 1000;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            font-size: 0.8rem;
+            color: #6c7486;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 700px) {
+            .container { padding: 1rem; }
+            .hero h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+        }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agencia de Vehiculos</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 (íconos modernos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<div class="position-relative">
+    <img class="img-fluid w-100" 
+         src="https://www.autonocion.com/wp-content/uploads/yhgujiok.jpg" 
+         alt="Paisaje" 
+         style="height: 200px; object-fit: cover;">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+        <h1 class="fw-bold">Bienvenido a Agencia</h1>
+        <p class="lead">sistema para administrar la Agencia de Vehiculos (Autos y Motos)</p>
+    </div>
+</div>
+
+<div class="container mt-5">
+
+    <div class="card">
+        <div class="card-header">
+        <h3 class="text-center">Tablas para administrar</h3>
+        </div>
+
+            <div class="card-body">
+                <div class="list-group">
+
+                    <a href="clientes/index.php" class="list-group-item">
+                        <i class="fa-solid fa-people-line"></i> Clientes
+                    </a>
+                    
+                    <a href="inventario/index.php" class="list-group-item">
+                        <i class="fa-solid fa-boxes-stacked"></i> Inventario
+                    </a>
+
+                    <a href="proveedores/index.php" class="list-group-item">
+                        <i class="fa-solid fa-truck"></i> Proveedores
+                    </a>
+
+                    <a href="vehiculos/index.php" class="list-group-item">
+                         <i class="fa-solid fa-car"></i> Vehiculos
+                    </a>
+
+                    <a href="ventas/index.php" class="list-group-item">
+                        <i class="fa-solid fa-cart-shopping"></i> Ventas
+                    </a>
+
+                </div>
+            </div>
+                        <div class="card-footer d-flex flex-column align-items-center">
+                <h5 class="card-title mb-2">Ir a las paginas iniciales</h5>
+
+                <div class="d-flex gap-2">
+                    <a class="btn btn-warning text-white" href="paginasIniciales/autos.html" role="button">
+                        <i class="fa-solid fa-car"></i> Autos
+                    </a>
+                    <a class="btn btn-primary" href="paginasIniciales/motos.html" role="button">
+                        <i class="fa-solid fa-motorcycle"></i> Motos
+                    </a>
+                </div>
+            </div>
+
+    </div>
+   
+
+</div>
+
+</body>
+</html>
